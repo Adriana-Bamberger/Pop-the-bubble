@@ -1,8 +1,9 @@
 function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
-      <p>React development has begun!</p>
+    <div className="footer">
+      <p className="footerText">
+        Copywrite 2024 © The chicken drumsticks rule!
+      </p>
     </div>
   )
 }
