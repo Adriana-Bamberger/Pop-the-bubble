@@ -1,7 +1,6 @@
 import Header from './Header'
 import Score from './Score'
 import Body from './Body'
-import Grid from './Grid'
 import Footer from './Footer'
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
       <Header />
       <Score />
       <Body />
-      <Grid />
       <Footer />
     </div>
   )
