@@ -4,7 +4,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-<<<<<<< HEAD
 .header {
   background-color: #b2e2fa;
   padding-top: 5px;
@@ -42,7 +41,6 @@ body {
   color: #6eabb7;
 }
 /*  */
-=======
 table,
 td {
   width: 500px;
@@ -51,4 +49,3 @@ td {
   border-collapse: collapse;
   margin: auto;
 }
->>>>>>> ebf87f30f016ef8627c40a0e6682d98b15e7c805
