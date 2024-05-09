@@ -1,5 +1,31 @@
 body {
-  background-color: #faf8f1;
-  color: #0a1520;
+  background-color: #94d7f8;
   font-family: 'Poppins', sans-serif;
 }
+
+.header {
+  background-color: #b2e2fa;
+  /* add the styles for the header div */
+}
+.title {
+  text-align: center;
+  color: #297373;
+  /* add the styles for the title h1 tag */
+}
+.subtitle {
+  text-align: center;
+  color: #6eabb7;
+  /* add the styles for the subtitle, a p tag*/
+}
+
+.footer {
+  background-color: #b2e2fa;
+  /* the footer div */
+}
+
+.footerText {
+  text-align: center;
+  color: #6eabb7;
+}
+
+/* will need to add the styles for the button yet. */
