@@ -12,7 +12,7 @@ function Score() {
   }
 
   return (
-    <div>
+    <div className="scoreCounter">
       <h3>Score</h3>
       <p>counter: {score}</p>
       <button onClick={increment}>Increment</button>

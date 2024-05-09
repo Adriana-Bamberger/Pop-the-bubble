@@ -25,6 +25,11 @@ body {
   /* add the styles for the subtitle, a p tag*/
 }
 
+/* the score counter */
+.scoreCounter {
+  text-align: center;
+}
+
 .footer {
   background-color: #b2e2fa;
   text-align: center;
