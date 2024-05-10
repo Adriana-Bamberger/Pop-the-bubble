@@ -57,3 +57,23 @@ td {
   text-align: center;
   color: #297373;
 }
+
+/* new grid */
+
+.grid-container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
+}
+
+.grid-cell {
+  /* width: 500px; */
+  /* height: 80px; */
+  border: 2px solid black;
+}
+
+.bubble-img {
+  width: 100%;
+}
