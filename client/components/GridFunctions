@@ -3,8 +3,9 @@ export function randomInteger(min, max) {
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
+console.log('test')
 
-function randomPlacement() {}
+// function randomPlacement() {}
 
 const allBubbles = [
   'first',
@@ -18,14 +19,21 @@ const allBubbles = [
 ]
 
 function selectRandomImage() {
-  const [bubble, setBubble] = useState({
-    first: false,
-    second: false,
-    third: false,
-    fourth: false,
-    fifth: false,
-    sixth: false,
-    seventh: false,
-    eighth: false,
-  })
+  // const [bubble, setBubble] = useState({
+  //   first: false,
+  //   second: false,
+  //   third: false,
+  //   fourth: false,
+  //   fifth: false,
+  //   sixth: false,
+  //   seventh: false,
+  //   eighth: false,
+  // })
+  const min = 0
+  const max = allBubbles.length
+
+  randomInteger(min, max)
+  console.log(min, max)
 }
+
+selectRandomImage()
