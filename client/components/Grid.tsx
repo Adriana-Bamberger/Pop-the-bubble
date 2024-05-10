@@ -18,6 +18,13 @@ export function selectRandomImage() {
   return index
 }
 
+function getRandomCell() {
+  const min = 0
+  const max = 24
+  const cellIndex = randomInteger(min, max)
+  return cellIndex
+}
+
 const image = selectRandomImage()
 
 const randomImg = (
@@ -27,12 +34,38 @@ const randomImg = (
 function Grid() {
   const [Cell, setCell] = useState<boolean[]>(new Array(25).fill(false))
 
+  const toggleImage = (clickIndex) => {
+    setCell(
+      [...Cell].map((value, index) => {
+        if (index === clickIndex) {
+          return false
+        } else return value
+      }),
+    )
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomIndex = getRandomCell()
+      const newCells = [...Cell]
+      newCells[randomIndex] = true
+      setCell(newCells)
+    }, 1000)
+    return () => {
+      clearInterval(interval)
+    }
+  })
+
   return (
     <>
       <div className="grid-container">
         {Cell.map((isCell, index) => (
-          <div className="grid-cell" key={index}>
-            {isCell ? Cell : randomImg}
+          <div
+            onClick={() => toggleImage(index)}
+            className="grid-cell"
+            key={index}
+          >
+            {isCell ? randomImg : Cell}
           </div>
         ))}
       </div>
