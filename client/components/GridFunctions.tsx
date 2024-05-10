@@ -34,4 +34,5 @@ export function selectRandomImage(min: number, max: number) {
   const selectedBubble = randomInteger(min, max)
   console.log(min, max)
   console.log(selectedBubble)
+  return min + max
 }
