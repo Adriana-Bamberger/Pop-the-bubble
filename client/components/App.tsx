@@ -9,11 +9,13 @@ function App() {
   return (
     <div>
       <Header />
-      <Score />
+      <div>
+        <Score />
+        <StartButton />
+      </div>
       <Body />
       <Grid />
       <Footer />
-      </StartButton>
     </div>
   )
 }
