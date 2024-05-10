@@ -1,3 +1,6 @@
+// When using this we use below.
+// {increment}
+
 import { useState } from 'react'
 
 function Score() {

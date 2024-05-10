@@ -1,9 +1,10 @@
-/* Main body things */
+/*--- Main body --- */
 body {
   background-color: #94d7f8;
   font-family: 'Poppins', sans-serif;
 }
 
+/*  --- Header --- */
 .header {
   background-color: #b2e2fa;
   padding-top: 5px;
@@ -11,26 +12,38 @@ body {
   margin-left: -20px;
   margin-right: -20px;
   padding-bottom: 8px;
-
-  /* add the styles for the header div */
 }
 .title {
   text-align: center;
   color: #297373;
-  /* add the styles for the title h1 tag */
 }
 .subtitle {
   text-align: center;
-  color: #6eabb7;
-  /* add the styles for the subtitle, a p tag*/
+  color: #297373;
 }
 
-/* the score counter */
+/*  --- Score counter ---  */
 .scoreCounter {
   text-align: center;
-  color: #6eabb7;
+  color: #297373;
 }
 
+/*  --- Start Game Button ---  */
+
+/* Add css here for the start game button */
+
+/* --- Table element ---- */
+table,
+td {
+  width: 500px;
+  height: 80px;
+  /* the color we'll want to change later */
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+/* --- Footer ---  */
 .footer {
   background-color: #b2e2fa;
   text-align: center;
@@ -38,25 +51,24 @@ body {
   bottom: 0;
   width: 100%;
   margin-left: -10px;
-
-  /* the footer div */
 }
 
 .footerText {
   text-align: center;
-  color: #6eabb7;
+  color: #297373;
 }
 
-/*  */
-table,
-td {
+/* new grid */
+
+.grid-container {
   width: 500px;
-  height: 80px;
-  border: 2px solid black;
-  border-collapse: collapse;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   margin: auto;
 }
 
+<<<<<<< HEAD
 .StartGameButtonDiv {
   text-align: center;
 }
@@ -68,4 +80,14 @@ td {
   border-color: #d782dd;
   border-width: 20px;
   background-color: #d782dd;
+=======
+.grid-cell {
+  /* width: 500px; */
+  /* height: 80px; */
+  border: 2px solid black;
+}
+
+.bubble-img {
+  width: 100%;
+>>>>>>> 3f94c4fb0324da58e821b931e5bbc52d79fafdd2
 }
