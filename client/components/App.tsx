@@ -5,8 +5,16 @@ import Score from './Score.js'
 import StartGame from './StartGame.js'
 import { useState } from 'react'
 
+const buttonText = 'Start Game'
+
 function App() {
   const [start, setStart] = useState(false)
+
+  const [isVisible, setIsVisible] = useState(true)
+
+  const toggleVisibility = () => {
+    setIsVisible(false)
+  }
 
   return (
     <>
@@ -14,9 +22,22 @@ function App() {
         <Header />
         <Footer />
       </div>
-      <button onClick={() => setStart(true)}>Start Game</button>
-
-      <main>{start === true && <StartGame />}</main>
+      <div className="Start Game Button">
+        {isVisible ? (
+          <button onClick={toggleVisibility}>Start Game!</button>
+        ) : (
+          <StartGame />
+        )}
+      </div>
+      {/* <button
+        onClick={() => {
+          setStart(true)
+          buttonText = ''
+        }}
+      >
+        {buttonText}
+      </button> */}
+      {/* <main>{isVisible === true && <StartGame />}</main> */}
     </>
   )
 }
