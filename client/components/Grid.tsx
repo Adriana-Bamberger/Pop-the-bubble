@@ -1,3 +1,12 @@
+import {
+  randomInteger,
+  // randomPlacement,
+  selectRandomImage,
+} from './GridFunctions'
+
+// randomPlacement()
+selectRandomImage(randomInteger(min, max), min: number, max: number)
+
 function Grid() {
   return (
     <div>
