@@ -25,15 +25,13 @@ function getRandomCell() {
   return cellIndex
 }
 
-const image = selectRandomImage()
-
-const randomImg = (
-  <img className="bubble-img" src={`/Bubble-${image}.png`} alt="bubble" />
-)
-
 function Grid() {
+  const [image, setImage] = useState(selectRandomImage())
   const [Cell, setCell] = useState<boolean[]>(new Array(25).fill(false))
 
+  const randomImg = (
+    <img className="bubble-img" src={`/Bubble-${image}.png`} alt="bubble" />
+  )
   const toggleImage = (clickIndex) => {
     setCell(
       [...Cell].map((value, index) => {
@@ -61,7 +59,10 @@ function Grid() {
       <div className="grid-container">
         {Cell.map((isCell, index) => (
           <div
-            onClick={() => toggleImage(index)}
+            onClick={() => {
+              toggleImage(index)
+              setImage(selectRandomImage())
+            }}
             className="grid-cell"
             key={index}
           >
