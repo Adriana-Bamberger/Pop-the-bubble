@@ -18,9 +18,11 @@ function App() {
         <Header />
         <Footer />
       </div>
-      <div className="Start Game Button">
+      <div className="StartGameButtonDiv">
         {isVisible ? (
-          <button onClick={toggleVisibility}>Start Game!</button>
+          <button className="StartGameButton" onClick={toggleVisibility}>
+            <b>Start Game!</b>
+          </button>
         ) : (
           <StartGame />
         )}

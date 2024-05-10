@@ -56,3 +56,16 @@ td {
   border-collapse: collapse;
   margin: auto;
 }
+
+.StartGameButtonDiv {
+  text-align: center;
+}
+
+.StartGameButton {
+  color: #470647;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  border-color: #d782dd;
+  border-width: 20px;
+  background-color: #d782dd;
+}
