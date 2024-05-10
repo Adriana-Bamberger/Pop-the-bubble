@@ -12,9 +12,8 @@ function Score() {
   }
 
   return (
-    <div>
-      <h3>Score</h3>
-      <p>counter: {score}</p>
+    <div className="scoreCounter">
+      <p>Bubbles Poped: {score}</p>
       <button onClick={increment}>Increment</button>
       <button onClick={reset}>reset</button>
     </div>

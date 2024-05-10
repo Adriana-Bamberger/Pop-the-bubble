@@ -1,9 +1,8 @@
 import Header from './Header'
-import Score from './Score'
 import Body from './Body'
-import Grid from './Grid'
 import Footer from './Footer'
 import StartButton from './StartButton.jsx'
+import Score from './Score.js'
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <StartButton />
       </div>
       <Body />
-      <Grid />
       <Footer />
     </div>
   )
