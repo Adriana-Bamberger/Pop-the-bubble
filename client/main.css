@@ -68,7 +68,6 @@ td {
   margin: auto;
 }
 
-<<<<<<< HEAD
 .StartGameButtonDiv {
   text-align: center;
 }
@@ -80,7 +79,7 @@ td {
   border-color: #d782dd;
   border-width: 20px;
   background-color: #d782dd;
-=======
+}
 .grid-cell {
   /* width: 500px; */
   /* height: 80px; */
@@ -89,5 +88,4 @@ td {
 
 .bubble-img {
   width: 100%;
->>>>>>> 3f94c4fb0324da58e821b931e5bbc52d79fafdd2
 }
