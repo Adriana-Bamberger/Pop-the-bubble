@@ -29,15 +29,6 @@ function App() {
           <StartGame />
         )}
       </div>
-      {/* <button
-        onClick={() => {
-          setStart(true)
-          buttonText = ''
-        }}
-      >
-        {buttonText}
-      </button> */}
-      {/* <main>{isVisible === true && <StartGame />}</main> */}
     </>
   )
 }
