@@ -20,59 +20,23 @@ export function selectRandomImage() {
 
 const image = selectRandomImage()
 
+const randomImg = (
+  <img className="bubble-img" src={`/Bubble-${image}.png`} alt="bubble" />
+)
+
 function Grid() {
   const [Cell, setCell] = useState<boolean[]>(new Array(25).fill(false))
 
   return (
-    <div>
-      <img src={`/Bubble-${image}.png`} />
-      <table>
-        <tbody>
-          <tr>
-            <td></td>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    <div className="grid-container">
-      {Cell.map((isCell, index) => (
-        <div className="grid-cell" key={index}>
-          {isCell}
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="grid-container">
+        {Cell.map((isCell, index) => (
+          <div className="grid-cell" key={index}>
+            {isCell ? Cell : randomImg}
+          </div>
+        ))}
+      </div>
+    </>
   )
 }
 

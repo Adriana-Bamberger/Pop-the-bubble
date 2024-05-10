@@ -72,3 +72,7 @@ td {
   /* height: 80px; */
   border: 2px solid black;
 }
+
+.bubble-img {
+  width: 100%;
+}
